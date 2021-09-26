@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title {
+    color: white;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 35vh;
+    width: 100%;
+}

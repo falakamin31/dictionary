@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    background-color: #272c34;
+    color: white;
+    height: 100vh;
+  
+  }
+  .child-container {
+  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    
+  }
