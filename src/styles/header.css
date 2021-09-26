@@ -5,7 +5,7 @@
 }
 .title {
     color: white;
-    font-size: 100px;
+    font-size: 73px;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     
@@ -17,4 +17,23 @@
     flex-direction: column;
     height: 35vh;
     width: 100%;
+}
+@media(max-width:900px)
+{
+    .header {
+        justify-content: space-evenly;
+        height: 25vh;
+    }
+    .title {
+        font-size: 11vw;
+
+    }
+}
+.inputs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.search ,.select {
+    width:43%
 }

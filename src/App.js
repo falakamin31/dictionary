@@ -37,7 +37,7 @@ return (
 <div className= "main-container">
       <Container className="child-container" maxWidth="sm">
 
-      <Header/>
+      <Header category={category} setCategory={setCategory} word={word} setWord={setWord}/>
       </Container>
       
     </div>
