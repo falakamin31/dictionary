@@ -1,36 +1,47 @@
 import React from "react";
-import "../styles/header.css";
-import { createTheme } from "@material-ui/core/styles";
-import { MenuItem, TextField, ThemeProvider } from "@material-ui/core";
+import "../Styles/Header.css";
+import {
+
+  MenuItem,
+  TextField,
+  ThemeProvider,
+} from "@material-ui/core";
+import { createTheme } from '@material-ui/core/styles'
 import categories from "../Data/Category";
 
-const Header = ({ category, setCategory, word, setWord }) => {
+export const Header = ({category,setCategory,word,setWord}) => {
   const darkTheme = createTheme({
     palette: {
       primary: {
         main: "#fff",
       },
       type: "dark",
-    },
+    }, 
   });
+
+  const handleChange = (language) =>{
+      setCategory(language);
+      setWord("");
+
+  }
   return (
     <div className="header">
-      <span className="title"> {word ? word : "Word Ocean"}</span>
+      <span className="title"> {word ? word :"Word Ocean"}</span>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
+          <TextField  className="search"   label="Search any Word"
+          value={word}
+          onChange={(e) => setWord(e.target.value)}
+           />
           <TextField
-            className="search"
+          className="select"
             
-            label="Search any Word"
-            value={word}
-            onChange={(e) => setWord(e.target.value)}
-          />
-          <TextField
-            className="select"
             select
             label="Languages"
             value={category}
-            onChange={(e) => setCategory(e.target.value)}
+            onChange={(e)=> handleChange (e.target.value)}
+
+            
           >
             {categories.map((option) => (
               <MenuItem key={option.label} value={option.label}>
@@ -43,5 +54,3 @@ const Header = ({ category, setCategory, word, setWord }) => {
     </div>
   );
 };
-
-export default Header;
