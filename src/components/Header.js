@@ -20,6 +20,7 @@ const Header = ({ category, setCategory, word, setWord }) => {
         <ThemeProvider theme={darkTheme}>
           <TextField
             className="search"
+            
             label="Search any Word"
             value={word}
             onChange={(e) => setWord(e.target.value)}
