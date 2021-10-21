@@ -11,6 +11,10 @@ const App = () => {
     const [word, setWord] = useState("")
     const [meanings, setMeanings] = useState([]);
     const [category, setCategory] = useState("en")
+
+
+
+
     const dictionaryApi= async() =>{
         try
         {
@@ -24,7 +28,7 @@ const App = () => {
     
     catch(error)
     {
-        // console.log(error);
+        console.log(error);
     }
   };
   

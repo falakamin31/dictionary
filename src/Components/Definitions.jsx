@@ -18,7 +18,7 @@ export const Definitions = ({word,category,meanings}) => {
             }
           
             
-            {word === "" ? (<span>Start by typing in Search bar</span> ):(
+            {word === "" ? (<span>Start by typing here</span> ):(
                 
                 
 

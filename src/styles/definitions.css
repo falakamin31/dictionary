@@ -29,6 +29,12 @@
     padding: 10px 19px;
     margin: 10px 0;
 }
+.theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 15;
+    padding-top: 10;
+}
 @media(max-width:900px){
     .meanings{
         height: 60vh;
